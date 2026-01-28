@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studio Flor de Liz | Pilates e Estética Integrativa</title>
     
-    <!-- Favicon -->
+    <!-- Favicon (Note: Local file, may not appear in preview) -->
     <link rel="icon" href="logo.jpg" type="image/jpeg">
 
     <!-- Fonts: Playfair Display (Editorial) & DM Sans (Modern/Clean) -->
@@ -91,7 +91,7 @@
                 <!-- Desktop Links -->
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="#features" class="text-sm font-medium hover:text-brand-900/60 transition-colors">Tratamentos Faciais</a>
+                        <a href="#features" class="text-sm font-medium hover:text-brand-900/60 transition-colors">Tratamentos Estéticos</a>
                         <a href="#body-features" class="text-sm font-medium hover:text-brand-900/60 transition-colors">Estética Corporal</a>
                         <a href="#why-us" class="text-sm font-medium hover:text-brand-900/60 transition-colors">Porque nós?</a>
                         <a href="#testimonials" class="text-sm font-medium hover:text-brand-900/60 transition-colors">Depoimentos</a>
@@ -121,7 +121,7 @@
         <!-- Mobile Menu -->
         <div x-show="open" class="md:hidden bg-brand-50 border-b border-brand-800/10">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
-                <a href="#features" class="block px-3 py-2 text-base font-medium text-brand-800 hover:bg-brand-100 rounded">Tratamentos Faciais</a>
+                <a href="#features" class="block px-3 py-2 text-base font-medium text-brand-800 hover:bg-brand-100 rounded">Tratamentos Estéticos</a>
                 <a href="#body-features" class="block px-3 py-2 text-base font-medium text-brand-800 hover:bg-brand-100 rounded">Estética Corporal</a>
                 <a href="#why-us" class="block px-3 py-2 text-base font-medium text-brand-800 hover:bg-brand-100 rounded">Porque nós?</a>
                 <a href="#testimonials" class="block px-3 py-2 text-base font-medium text-brand-800 hover:bg-brand-100 rounded">Depoimentos</a>
@@ -181,57 +181,87 @@
         <div class="absolute top-0 right-0 -mr-20 -mt-20 w-[600px] h-[600px] bg-amber-100/30 rounded-full blur-3xl -z-10 pointer-events-none"></div>
     </section>
 
-    <!-- 3. Tratamentos Faciais(Bento Grid) -->
+    <!-- 3. Tratamentos Estéticos (Bento Grid) -->
     <section id="features" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="text-center mb-16 reveal">
-                <h2 class="text-4xl lg:text-5xl font-serif mb-4">Tratamentos Faciais</h2>
+                <h2 class="text-4xl lg:text-5xl font-serif mb-4">Tratamentos Estéticos</h2>
                 <p class="text-brand-800/60 max-w-xl mx-auto">Tecnologia avançada aliada ao toque humano.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Alterado grid para lg:grid-cols-6 para melhor controle de largura -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6">
                 
-                <!-- Main Card (Spans 2x2) -->
-                <div class="group relative md:col-span-2 md:row-span-2 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 reveal">
-                    <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=2070&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Microagulhamento">
+                <!-- Destaque 1: Microagulhamento Facial (Grande - Metade da tela) -->
+                <div class="group relative md:col-span-2 lg:col-span-3 lg:row-span-2 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 reveal min-h-[500px]">
+                    <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=2070&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Microagulhamento Facial">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                     <div class="absolute bottom-0 left-0 p-8 text-white">
-                        <h3 class="text-3xl font-serif mb-2">Microagulhamento</h3>
+                        <h3 class="text-3xl font-serif mb-2">Microagulhamento Facial</h3>
                         <p class="opacity-90 font-light mb-4">Rejuvenescimento profundo e produção natural de colágeno.</p>
                         <span class="inline-block border-b border-white pb-1 text-sm uppercase tracking-widest cursor-pointer">Saiba mais</span>
                     </div>
                 </div>
 
-                <!-- Secondary Cards -->
-                <div class="bg-brand-50 p-6 rounded-3xl hover:bg-brand-100 transition-colors cursor-pointer group reveal">
-                    <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center mb-4 shadow-sm group-hover:scale-110 transition-transform">✨</div>
-                    <h4 class="font-serif text-xl mb-2">Peeling Rejuvenescedor</h4>
-                    <p class="text-sm text-brand-800/60 leading-relaxed">Renovação celular para uma pele radiante.</p>
+                <!-- Destaque 2: Microagulhamento Capilar (Grande - Metade da tela) -->
+                <div class="group relative md:col-span-2 lg:col-span-3 lg:row-span-2 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 reveal min-h-[500px]">
+                    <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=2068&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Microagulhamento Capilar">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-8 text-white">
+                        <h3 class="text-3xl font-serif mb-2">Microagulhamento Capilar</h3>
+                        <p class="opacity-90 font-light mb-4">Estimulação do crescimento e fortalecimento dos fios.</p>
+                        <span class="inline-block border-b border-white pb-1 text-sm uppercase tracking-widest cursor-pointer">Saiba mais</span>
+                    </div>
                 </div>
 
-                <div class="bg-brand-50 p-6 rounded-3xl hover:bg-brand-100 transition-colors cursor-pointer group reveal">
-                    <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center mb-4 shadow-sm group-hover:scale-110 transition-transform">💧</div>
-                    <h4 class="font-serif text-xl mb-2">Limpeza com Ozônio</h4>
-                    <p class="text-sm text-brand-800/60 leading-relaxed">Vapor de ozônio e extração segura.</p>
+                <!-- Destaque 3: Peeling Químico (Médio - Mais alto e espaçado) -->
+                <div class="lg:col-span-2 bg-brand-50 p-8 rounded-3xl hover:bg-brand-100 transition-colors cursor-pointer group reveal flex flex-col justify-center min-h-[280px]">
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform">🧪</div>
+                    <h4 class="font-serif text-2xl mb-3">Peeling Químico Facial</h4>
+                    <p class="text-base text-brand-800/60 leading-relaxed">Renovação celular intensa para uma pele uniforme e radiante.</p>
                 </div>
 
-                <div class="bg-brand-50 p-6 rounded-3xl hover:bg-brand-100 transition-colors cursor-pointer group reveal">
-                    <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center mb-4 shadow-sm group-hover:scale-110 transition-transform">🌸</div>
-                    <h4 class="font-serif text-xl mb-2">Clareamento</h4>
-                    <p class="text-sm text-brand-800/60 leading-relaxed">Tratamento eficaz contra manchas.</p>
+                <!-- Destaque 4: Peeling Diamante (Médio - Mais alto e espaçado) -->
+                <div class="lg:col-span-2 bg-brand-50 p-8 rounded-3xl hover:bg-brand-100 transition-colors cursor-pointer group reveal flex flex-col justify-center min-h-[280px]">
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform">💎</div>
+                    <h4 class="font-serif text-2xl mb-3">Peeling Diamante</h4>
+                    <p class="text-base text-brand-800/60 leading-relaxed">Esfoliação profunda para textura, brilho e maciez imediata.</p>
                 </div>
 
-                <div class="bg-brand-50 p-6 rounded-3xl hover:bg-brand-100 transition-colors cursor-pointer group reveal">
-                    <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center mb-4 shadow-sm group-hover:scale-110 transition-transform">⚡</div>
-                    <h4 class="font-serif text-xl mb-2">Radiofrequência</h4>
-                    <p class="text-sm text-brand-800/60 leading-relaxed">Firmeza e contorno sem dor.</p>
+                <!-- Destaque 5: Peeling Facial (Médio - Mais alto e espaçado) -->
+                <div class="md:col-span-2 lg:col-span-2 bg-brand-50 p-8 rounded-3xl hover:bg-brand-100 transition-colors cursor-pointer group reveal flex flex-col justify-center min-h-[280px]">
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform">✨</div>
+                    <h4 class="font-serif text-2xl mb-3">Peeling Facial</h4>
+                    <p class="text-base text-brand-800/60 leading-relaxed">Protocolo exclusivo para revitalização e saúde da pele.</p>
+                </div>
+
+                <!-- Secundário 1: Limpeza (Pequeno) -->
+                <div class="lg:col-span-2 bg-white border border-brand-800/5 p-6 rounded-3xl hover:shadow-lg transition-all cursor-pointer group reveal h-full">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="text-xl">💧</span>
+                        <h4 class="font-serif text-lg">Limpeza com Ozônio</h4>
+                    </div>
+                    <p class="text-xs text-brand-800/50 leading-relaxed">Vapor de ozônio e extração segura.</p>
+                </div>
+
+                <!-- Secundário 2: Radiofrequência (Pequeno) -->
+                <div class="lg:col-span-2 bg-white border border-brand-800/5 p-6 rounded-3xl hover:shadow-lg transition-all cursor-pointer group reveal h-full">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="text-xl">⚡</span>
+                        <h4 class="font-serif text-lg">Radiofrequência</h4>
+                    </div>
+                    <p class="text-xs text-brand-800/50 leading-relaxed">Firmeza e contorno facial.</p>
                 </div>
                 
-                <div class="bg-stone-900 text-white p-6 rounded-3xl md:col-span-2 flex flex-col justify-center items-start hover:shadow-xl transition-shadow reveal">
-                    <h4 class="font-serif text-2xl mb-2">Botox & Preenchimento</h4>
-                    <p class="text-white/70 mb-4 max-w-sm">Harmonização facial com resultados naturais e elegância.</p>
-                    <a href="https://wa.me/5511968429937?text=Ol%C3%A1,+vim+do+site.+Pode+me+ajudar?" target="_blank" class="text-sm font-bold uppercase tracking-widest text-amber-200">Consultar especialista &rarr;</a>
+                <!-- Secundário 3: Botox (Pequeno) -->
+                <div class="md:col-span-2 lg:col-span-2 bg-white border border-brand-800/5 p-6 rounded-3xl hover:shadow-lg transition-all cursor-pointer group reveal h-full">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="text-xl">💉</span>
+                        <h4 class="font-serif text-lg">Botox</h4>
+                    </div>
+                    <p class="text-xs text-brand-800/50 leading-relaxed">Suavização de linhas de expressão.</p>
                 </div>
+
             </div>
         </div>
     </section>
@@ -247,56 +277,96 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 
                 <!-- Card 1: Drenagem -->
-                <div class="bg-white p-6 rounded-3xl hover:bg-brand-50 transition-colors cursor-pointer group reveal">
-                    <div class="w-10 h-10 bg-brand-50 rounded-full flex items-center justify-center mb-4 shadow-sm group-hover:scale-110 transition-transform">🌿</div>
-                    <h4 class="font-serif text-xl mb-2">Drenagem Linfática</h4>
-                    <p class="text-sm text-brand-800/60 leading-relaxed">Manobras suaves e rítmicas para reduzir edemas e melhorar a circulação.</p>
-                </div>
-
-                <!-- Card 2: Ortomolecular -->
-                <div class="bg-white p-6 rounded-3xl hover:bg-brand-50 transition-colors cursor-pointer group reveal">
-                    <div class="w-10 h-10 bg-brand-50 rounded-full flex items-center justify-center mb-4 shadow-sm group-hover:scale-110 transition-transform">🔥</div>
-                    <h4 class="font-serif text-xl mb-2">Ortomolecular</h4>
-                    <p class="text-sm text-brand-800/60 leading-relaxed">Endermologia combinada com manta térmica para redução de gordura localizada.</p>
-                </div>
-
-                <!-- Card 3: Criolipólise (Span 2 for emphasis) -->
-                <div class="group relative md:col-span-2 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 reveal">
-                    <img src="https://images.unsplash.com/photo-1519824145371-296894a0daa9?q=80&w=2070&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Criolipólise">
-                    <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
-                    <div class="absolute inset-0 p-8 flex flex-col justify-center text-white">
-                        <h3 class="text-2xl lg:text-3xl font-serif mb-2">Criolipólise de Placas</h3>
-                        <p class="opacity-90 font-light mb-4 max-w-md text-sm lg:text-base">Baixas temperaturas que congelam e eliminam células de gordura. Sem sucção, destruição controlada.</p>
-                        <span class="text-xs uppercase tracking-widest text-amber-200">Tecnologia avançada</span>
+                <div class="relative bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 cursor-pointer group reveal h-full">
+                    <!-- Imagem de Fundo -->
+                    <img src="drenagemlinfatica.webp" alt="Drenagem Linfática" class="absolute inset-0 w-full h-full object-cover opacity-10 group-hover:opacity-100 transition-opacity duration-500 z-0">
+                    
+                    <!-- Conteúdo -->
+                    <div class="relative z-10 p-6 h-full flex flex-col group-hover:opacity-0 transition-opacity duration-300">
+                        <div class="w-12 h-12 bg-brand-50 rounded-full flex items-center justify-center mb-4 shadow-sm text-2xl">🌿</div>
+                        <h4 class="font-serif text-lg font-bold mb-2">Drenagem Linfática</h4>
+                        <p class="text-sm text-brand-800/60 leading-relaxed">Manobras suaves e rítmicas para reduzir edemas, retenção de líquidos e melhorar a circulação.</p>
                     </div>
                 </div>
 
-                <!-- Card 4: Pump Up -->
-                <div class="bg-white p-6 rounded-3xl hover:bg-brand-50 transition-colors cursor-pointer group reveal">
-                    <div class="w-10 h-10 bg-brand-50 rounded-full flex items-center justify-center mb-4 shadow-sm group-hover:scale-110 transition-transform">🍑</div>
-                    <h4 class="font-serif text-xl mb-2">Pump Up</h4>
-                    <p class="text-sm text-brand-800/60 leading-relaxed">Levanta e modela glúteos com ventosas de pressão pulsada. Indolor.</p>
+                <!-- Card 2: Ortomolecular -->
+                <div class="relative bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 cursor-pointer group reveal h-full">
+                    <img src="tratamentoortomolecular.webp" alt="Tratamento Ortomolecular" class="absolute inset-0 w-full h-full object-cover opacity-10 group-hover:opacity-100 transition-opacity duration-500 z-0">
+                    
+                    <div class="relative z-10 p-6 h-full flex flex-col group-hover:opacity-0 transition-opacity duration-300">
+                        <div class="w-12 h-12 bg-brand-50 rounded-full flex items-center justify-center mb-4 shadow-sm text-2xl">🧪</div>
+                        <h4 class="font-serif text-lg font-bold mb-2">Tratamento Ortomolecular</h4>
+                        <p class="text-xs uppercase tracking-wide text-brand-800/50 mb-2 font-bold">Para Redução de Gordura Localizada</p>
+                        <p class="text-sm text-brand-800/60 leading-relaxed">Combinação de cosmecêuticos e técnicas para desintoxicação e queima de gordura.</p>
+                    </div>
                 </div>
 
-                <!-- Card 5: Reflexologia -->
-                <div class="bg-white p-6 rounded-3xl hover:bg-brand-50 transition-colors cursor-pointer group reveal">
-                    <div class="w-10 h-10 bg-brand-50 rounded-full flex items-center justify-center mb-4 shadow-sm group-hover:scale-110 transition-transform">🦶</div>
-                    <h4 class="font-serif text-xl mb-2">Reflexologia Podal</h4>
-                    <p class="text-sm text-brand-800/60 leading-relaxed">Pressão em pontos específicos para aliviar dores e melhorar o equilíbrio energético.</p>
+                <!-- Card 3: Manta Térmica -->
+                <div class="relative bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 cursor-pointer group reveal h-full">
+                    <img src="mantatermica.webp" alt="Manta Térmica" class="absolute inset-0 w-full h-full object-cover opacity-10 group-hover:opacity-100 transition-opacity duration-500 z-0">
+                    
+                    <div class="relative z-10 p-6 h-full flex flex-col group-hover:opacity-0 transition-opacity duration-300">
+                        <div class="w-12 h-12 bg-brand-50 rounded-full flex items-center justify-center mb-4 shadow-sm text-2xl">🔥</div>
+                        <h4 class="font-serif text-lg font-bold mb-2">Manta Térmica</h4>
+                        <p class="text-xs uppercase tracking-wide text-brand-800/50 mb-2 font-bold">Para Redução de Gordura Localizada</p>
+                        <p class="text-sm text-brand-800/60 leading-relaxed">Termoterapia que acelera o metabolismo e auxilia na eliminação de toxinas e gorduras.</p>
+                    </div>
                 </div>
 
-                <!-- Card 6: Ozonioterapia -->
-                <div class="bg-white p-6 rounded-3xl hover:bg-brand-50 transition-colors cursor-pointer group reveal">
-                    <div class="w-10 h-10 bg-brand-50 rounded-full flex items-center justify-center mb-4 shadow-sm group-hover:scale-110 transition-transform">🫧</div>
-                    <h4 class="font-serif text-xl mb-2">Ozonioterapia</h4>
-                    <p class="text-sm text-brand-800/60 leading-relaxed">Tratamento eficaz para celulite, flacidez e gordura localizada.</p>
+                <!-- Card 4: Criolipólise -->
+                <div class="relative bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 cursor-pointer group reveal h-full">
+                    <img src="criolipolise.webp" alt="Criolipólise" class="absolute inset-0 w-full h-full object-cover opacity-10 group-hover:opacity-100 transition-opacity duration-500 z-0">
+                    
+                    <div class="relative z-10 p-6 h-full flex flex-col group-hover:opacity-0 transition-opacity duration-300">
+                        <div class="w-12 h-12 bg-brand-50 rounded-full flex items-center justify-center mb-4 shadow-sm text-2xl">❄️</div>
+                        <h4 class="font-serif text-lg font-bold mb-2">Criolipólise de Placas</h4>
+                        <p class="text-sm text-brand-800/60 leading-relaxed">Congelamento seguro de células de gordura para destruição e eliminação natural pelo organismo.</p>
+                    </div>
                 </div>
 
-                <!-- Card 7: Hidrovitalis -->
-                <div class="bg-brand-800 text-brand-50 p-6 rounded-3xl hover:bg-brand-900 transition-colors cursor-pointer group reveal">
-                    <div class="w-10 h-10 bg-brand-700 rounded-full flex items-center justify-center mb-4 shadow-sm group-hover:scale-110 transition-transform">🌊</div>
-                    <h4 class="font-serif text-xl mb-2">Hidrovitalis</h4>
-                    <p class="text-sm text-brand-50/70 leading-relaxed">Hidroterapia e bio-eletrônica para desintoxicação e normalização do organismo.</p>
+                <!-- Card 5: Pump Up -->
+                <div class="relative bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 cursor-pointer group reveal h-full">
+                    <img src="pumpup.webp" alt="Pump Up" class="absolute inset-0 w-full h-full object-cover opacity-10 group-hover:opacity-100 transition-opacity duration-500 z-0">
+                    
+                    <div class="relative z-10 p-6 h-full flex flex-col group-hover:opacity-0 transition-opacity duration-300">
+                        <div class="w-12 h-12 bg-brand-50 rounded-full flex items-center justify-center mb-4 shadow-sm text-2xl">🍑</div>
+                        <h4 class="font-serif text-lg font-bold mb-2">Pump Up</h4>
+                        <p class="text-sm text-brand-800/60 leading-relaxed">Levanta e modela glúteos com ventosas de pressão pulsada. Indolor e eficaz.</p>
+                    </div>
+                </div>
+
+                <!-- Card 6: Reflexologia -->
+                <div class="relative bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 cursor-pointer group reveal h-full">
+                    <img src="reflexologiapodal.webp" alt="Reflexologia Podal" class="absolute inset-0 w-full h-full object-cover opacity-10 group-hover:opacity-100 transition-opacity duration-500 z-0">
+                    
+                    <div class="relative z-10 p-6 h-full flex flex-col group-hover:opacity-0 transition-opacity duration-300">
+                        <div class="w-12 h-12 bg-brand-50 rounded-full flex items-center justify-center mb-4 shadow-sm text-2xl">🦶</div>
+                        <h4 class="font-serif text-lg font-bold mb-2">Reflexologia Podal</h4>
+                        <p class="text-sm text-brand-800/60 leading-relaxed">Pressão em pontos específicos dos pés para aliviar dores e melhorar o equilíbrio energético.</p>
+                    </div>
+                </div>
+
+                <!-- Card 7: Ozonioterapia -->
+                <div class="relative bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 cursor-pointer group reveal h-full">
+                    <img src="ozonioterapia.webp" alt="Ozonioterapia" class="absolute inset-0 w-full h-full object-cover opacity-10 group-hover:opacity-100 transition-opacity duration-500 z-0">
+                    
+                    <div class="relative z-10 p-6 h-full flex flex-col group-hover:opacity-0 transition-opacity duration-300">
+                        <div class="w-12 h-12 bg-brand-50 rounded-full flex items-center justify-center mb-4 shadow-sm text-2xl">🫧</div>
+                        <h4 class="font-serif text-lg font-bold mb-2">Ozonioterapia Estética</h4>
+                        <p class="text-sm text-brand-800/60 leading-relaxed">Poderoso antioxidante para tratamento de celulite, flacidez e gordura localizada.</p>
+                    </div>
+                </div>
+
+                <!-- Card 8: Detox Hidrovitalis -->
+                <div class="relative bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 cursor-pointer group reveal h-full">
+                    <img src="hidrovitalis.webp" alt="Hidrovitalis" class="absolute inset-0 w-full h-full object-cover opacity-10 group-hover:opacity-100 transition-opacity duration-500 z-0">
+                    
+                    <div class="relative z-10 p-6 h-full flex flex-col group-hover:opacity-0 transition-opacity duration-300">
+                        <div class="w-12 h-12 bg-brand-50 rounded-full flex items-center justify-center mb-4 shadow-sm text-2xl">🌊</div>
+                        <h4 class="font-serif text-lg font-bold mb-2">Detox dos pés</h4>
+                        <p class="text-xs uppercase tracking-wide text-brand-800/50 mb-2 font-bold">pelo Hidrovitalis</p>
+                        <p class="text-sm text-brand-800/60 leading-relaxed">Desintoxicação profunda através dos pés para equilíbrio e limpeza do organismo.</p>
+                    </div>
                 </div>
 
             </div>
@@ -429,7 +499,7 @@
                 </div>
 
                 <div class="relative flex justify-center reveal delay-200">
-                     <!-- Abstract representation of app/booking interface -->
+                      <!-- Abstract representation of app/booking interface -->
                     <div class="relative w-64 h-[500px] bg-brand-800 rounded-[2.5rem] border-8 border-brand-700 shadow-2xl overflow-hidden">
                         <div class="absolute top-0 w-full h-full bg-[url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop')] bg-cover opacity-60"></div>
                         <div class="absolute bottom-0 w-full p-6 bg-gradient-to-t from-black to-transparent">
@@ -459,7 +529,7 @@
                         <p>Rua Pau D'arco Roxo, 402, Jardim Pedro José Nunes</p>
                         <div class="mb-3 flex items-center justify-center md:justify-start gap-2">
                             <span>São Paulo - SP</span>
-                            <a href="https://maps.app.goo.gl/ieVmEdUY3Da47L1L6" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-7 h-7 bg-brand-900 text-brand-50 rounded-full hover:bg-brand-700 hover:scale-110 transition-all shadow-md group" aria-label="Ver localização no Google Maps" title="Ver no Mapa">
+                            <a href="https://maps.app.goo.gl/Nk2ZJCusahn9N51C7" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-7 h-7 bg-brand-900 text-brand-50 rounded-full hover:bg-brand-700 hover:scale-110 transition-all shadow-md group" aria-label="Ver localização no Google Maps" title="Ver no Mapa">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5">
                                     <path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
                                 </svg>
@@ -510,6 +580,7 @@
                 <div class="flex justify-center">
                     <a href="https://wa.me/5561991390058?text=Ol%C3%A1,+vi+que+desenvolvem+sites.+Podem+me+ajudar?" target="_blank" class="flex items-center gap-2 hover:text-brand-800 transition-colors group">
                         <span>Desenvolvido por</span>
+                        <!-- Local image: will appear broken if file is missing -->
                         <img src="logoE.webp" alt="Logo Desenvolvedor" class="w-12 h-auto opacity-80 group-hover:opacity-100 transition-opacity">
                     </a>
                 </div>
