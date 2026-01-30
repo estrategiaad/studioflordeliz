@@ -82,6 +82,10 @@
                             100: '#EFEBE5',
                             800: '#2C2A26', /* Deep Charcoal */
                             900: '#1A1917',
+                        },
+                        cta: {
+                            DEFAULT: '#D4AF37', /* Metallic Gold */
+                            hover: '#B5952F',   /* Darker Gold */
                         }
                     },
                     animation: {
@@ -139,21 +143,20 @@
                 </div>
                 
                 <!-- Desktop Links (Updated Highlight Effect & Breakpoint to XL) -->
-                <div class="hidden xl:block">
-                    <div class="ml-10 flex items-baseline space-x-1">
-                        <a href="#features" class="px-3 py-2 rounded-full text-base font-medium text-brand-800 hover:bg-brand-800 hover:text-brand-50 transition-all duration-300">Tratamentos Estéticos</a>
-                        <a href="#facial-features" class="px-3 py-2 rounded-full text-base font-medium text-brand-800 hover:bg-brand-800 hover:text-brand-50 transition-all duration-300">Estética Facial</a>
-                        <a href="#body-features" class="px-3 py-2 rounded-full text-base font-medium text-brand-800 hover:bg-brand-800 hover:text-brand-50 transition-all duration-300">Estética Corporal</a>
-                        <a href="#therapies" class="px-3 py-2 rounded-full text-base font-medium text-brand-800 hover:bg-brand-800 hover:text-brand-50 transition-all duration-300">Terapias</a>
-                        <a href="#why-us" class="px-3 py-2 rounded-full text-base font-medium text-brand-800 hover:bg-brand-800 hover:text-brand-50 transition-all duration-300">Porque nós?</a>
-                        <a href="#testimonials" class="px-3 py-2 rounded-full text-base font-medium text-brand-800 hover:bg-brand-800 hover:text-brand-50 transition-all duration-300">Depoimentos</a>
-                        <a href="#faq" class="px-3 py-2 rounded-full text-base font-medium text-brand-800 hover:bg-brand-800 hover:text-brand-50 transition-all duration-300">FAQ</a>
+                <div class="hidden xl:flex flex-1 justify-center px-4">
+                    <div class="flex items-center space-x-1">
+                        <a href="#features" class="px-3 py-2 rounded-full text-base font-medium text-brand-800 hover:bg-brand-800 hover:text-brand-50 transition-all duration-300 text-center leading-tight">Tratamentos Estéticos</a>
+                        <a href="#facial-features" class="px-3 py-2 rounded-full text-base font-medium text-brand-800 hover:bg-brand-800 hover:text-brand-50 transition-all duration-300 text-center leading-tight">Estética Facial</a>
+                        <a href="#body-features" class="px-3 py-2 rounded-full text-base font-medium text-brand-800 hover:bg-brand-800 hover:text-brand-50 transition-all duration-300 text-center leading-tight">Estética Corporal</a>
+                        <a href="#therapies" class="px-3 py-2 rounded-full text-base font-medium text-brand-800 hover:bg-brand-800 hover:text-brand-50 transition-all duration-300 text-center leading-tight">Terapias</a>
+                        <a href="#testimonials" class="px-3 py-2 rounded-full text-base font-medium text-brand-800 hover:bg-brand-800 hover:text-brand-50 transition-all duration-300 text-center leading-tight">Depoimentos</a>
+                        <a href="#faq" class="px-3 py-2 rounded-full text-base font-medium text-brand-800 hover:bg-brand-800 hover:text-brand-50 transition-all duration-300 text-center leading-tight">FAQ</a>
                     </div>
                 </div>
 
                 <!-- CTA Button -->
-                <div class="hidden xl:block">
-                    <a href="https://wa.me/5511968429937?text=Ol%C3%A1,+vim+do+site.+Pode+me+ajudar?" target="_blank" class="px-6 py-2.5 bg-brand-900 text-brand-50 text-base font-medium rounded-full hover:bg-gray-800 transition-all transform hover:-translate-y-0.5">
+                <div class="hidden xl:block flex-shrink-0">
+                    <a href="https://wa.me/5511968429937?text=Ol%C3%A1,+vim+do+site.+Pode+me+ajudar?" target="_blank" class="px-6 py-2.5 bg-cta-DEFAULT text-white text-base font-medium rounded-full hover:bg-cta-hover transition-all transform hover:-translate-y-1 hover:shadow-xl hover:shadow-cta-DEFAULT/30 whitespace-nowrap">
                         Agende sua avaliação
                     </a>
                 </div>
@@ -177,10 +180,9 @@
                 <a href="#facial-features" class="block px-3 py-2 text-base font-medium text-brand-800 hover:bg-brand-800 hover:text-brand-50 rounded transition-colors">Estética Facial</a>
                 <a href="#body-features" class="block px-3 py-2 text-base font-medium text-brand-800 hover:bg-brand-800 hover:text-brand-50 rounded transition-colors">Estética Corporal</a>
                 <a href="#therapies" class="block px-3 py-2 text-base font-medium text-brand-800 hover:bg-brand-800 hover:text-brand-50 rounded transition-colors">Terapias</a>
-                <a href="#why-us" class="block px-3 py-2 text-base font-medium text-brand-800 hover:bg-brand-800 hover:text-brand-50 rounded transition-colors">Porque nós?</a>
                 <a href="#testimonials" class="block px-3 py-2 text-base font-medium text-brand-800 hover:bg-brand-800 hover:text-brand-50 rounded transition-colors">Depoimentos</a>
                 <a href="#faq" class="block px-3 py-2 text-base font-medium text-brand-800 hover:bg-brand-800 hover:text-brand-50 rounded transition-colors">FAQ</a>
-                <a href="https://wa.me/5511968429937?text=Ol%C3%A1,+vim+do+site.+Pode+me+ajudar?" target="_blank" class="block mt-4 px-5 py-3 bg-brand-900 text-brand-50 font-medium rounded-full">Agende sua avaliação</a>
+                <a href="https://wa.me/5511968429937?text=Ol%C3%A1,+vim+do+site.+Pode+me+ajudar?" target="_blank" class="block mt-4 px-5 py-3 bg-cta-DEFAULT text-white font-medium rounded-full">Agende sua avaliação</a>
             </div>
         </div>
     </nav>
@@ -207,7 +209,7 @@
                     </p>
 
                     <div class="flex flex-col sm:flex-row gap-4 mb-10">
-                        <a href="https://wa.me/5511968429937?text=Ol%C3%A1,+vim+do+site.+Pode+me+ajudar?" target="_blank" class="px-8 py-4 bg-brand-900 text-white font-medium rounded-full text-center hover:bg-gray-800 transition-all hover:scale-105 shadow-lg shadow-brand-900/20">
+                        <a href="https://wa.me/5511968429937?text=Ol%C3%A1,+vim+do+site.+Pode+me+ajudar?" target="_blank" class="px-8 py-4 bg-cta-DEFAULT text-white font-medium rounded-full text-center hover:bg-cta-hover transition-all hover:scale-105 shadow-[0_0_20px_rgba(212,175,55,0.4)] hover:shadow-[0_0_30px_rgba(212,175,55,0.6)]">
                             Agende sua avaliação
                         </a>
                     </div>
@@ -600,7 +602,7 @@
                     <p class="text-brand-100/80 mb-8 text-lg">Agende uma avaliação personalizada com nossos especialistas hoje mesmo.</p>
                     
                     <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <a href="https://wa.me/5511968429937?text=Ol%C3%A1,+vim+do+site.+Pode+me+ajudar?" target="_blank" class="px-8 py-4 bg-white text-brand-900 font-bold rounded-full hover:bg-gray-100 transition-all text-center">
+                        <a href="https://wa.me/5511968429937?text=Ol%C3%A1,+vim+do+site.+Pode+me+ajudar?" target="_blank" class="px-8 py-4 bg-cta-DEFAULT text-white font-medium rounded-full text-center hover:bg-cta-hover transition-all hover:scale-105 shadow-[0_0_20px_rgba(212,175,55,0.4)] hover:shadow-[0_0_30px_rgba(212,175,55,0.6)]">
                             Agende pelo WhatsApp
                         </a>
                     </div>
